@@ -1,0 +1,10 @@
+<div [class.dark-mode]="isDarkMode">
+  <div class="theme-toggle">
+    <button (click)="toggleTheme()">
+      {{ isDarkMode ? '☀️' : '🌙' }}
+    </button>
+  </div>
+  <main>
+    <app-converter></app-converter>
+  </main>
+</div>
